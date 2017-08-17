@@ -1,45 +1,81 @@
 html {
-	
+	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../images/background.svg);
+	background-size: cover;
 	background-position: 50% 70%;
 	background-attachment: fixed;
-	margin: 0;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "Georgia", serif;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-size: 16px;
 	line-height: 150%;
+	position: relative;
 }
 
 header {
-	height: 84px;
-	width: 100%;
-	background: #c8c8c8; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(-10deg, #c8c8c8, #fff, #c8c8c8); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(-10deg, #c8c8c8, #fff, #c8c8c8); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(-10deg, #c8c8c8, #fff, #c8c8c8); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(-10deg, #c8c8c8, #fff, #c8c8c8); /* Standard syntax */
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 7%;
+	width: 70%;
+	background: linear-gradient(-10deg, #c8c8c8, #fff, #c8c8c8);
 	position: fixed;
+	border-bottom: 3px solid #333333;
 	top: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 h1 {
-	width: 200px;
+	font-family: "Big Caslon","Book Antiqua","Palatino Linotype",Georgia,serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	width: 20%;
 	text-align: center;
-	float: left; 
-	padding: 30px;
 	color: #f8f8f8;
 	text-transform: capitalize;
-	background-color: #196C18;
-	margin: 0 0 0 25%;
+	background: linear-gradient(90deg, #6E110A 50%, #1A4C8B 50%);
+	padding-top: 35%;
+}
+
+h2 {
+	text-transform: capitalize;
+	font-family: "Big Caslon","Book Antiqua","Palatino Linotype",Georgia,serif;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .nav {
-	margin: 40px 0 0 70%;
+	padding-top: 35%;
+}
+
+.layout {
+	margin: 7% 5% 5% 5%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.container {
+	background-color: rgba(224, 224, 224, 0.8);
+	width: 69%;
+	flex-wrap: wrap;
+}
+
+.containerInner {
+	margin: 5%;
+}
+
+.connect {
+	background-color: rgba(224, 224, 224, 0.8);
+	width: 29%;
+	margin: 2%;
+}
+
+.connectInner {
+	margin: 5%;
 }
 
 a:link {
@@ -61,3 +97,15 @@ a:active {
 	color: #002909;
 }
 
+footer {
+	width: 100%;
+	color: #999;
+	text-transform: capitalize;
+	text-align: center;
+ 	background-color: #333;
+ 	padding-bottom: 3%;
+ 	padding-top: 1%;
+ 	border-top: 3px solid #999;
+	position: fixed;
+ 	bottom: 0;
+}
