@@ -15,40 +15,38 @@ body {
 	position: relative;
 }
 
-header {
+h1 {
+	font-family: "Big Caslon","Book Antiqua","Palatino Linotype",Georgia,serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+h2 {
+	font-family: "Big Caslon","Book Antiqua","Palatino Linotype",Georgia,serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.bar {
 	padding-left: 15%;
 	padding-right: 15%;
-	height: 7%;
 	width: 70%;
-	background: linear-gradient(-10deg, #c8c8c8, #fff, #c8c8c8);
+	background: linear-gradient(-10deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
 	position: fixed;
 	border-bottom: 3px solid #333333;
 	top: 0;
 	display: flex;
 	justify-content: space-between;
+	overflow: auto;
 }
 
-h1 {
-	font-family: "Big Caslon","Book Antiqua","Palatino Linotype",Georgia,serif;
-	font-size: 1.8em;
-	font-weight: bold;
-	width: 20%;
+.name {
+	background: linear-gradient(90deg, #6E110A 50%, #1A4C8B 50%);	
 	text-align: center;
 	color: #f8f8f8;
-	text-transform: capitalize;
-	background: linear-gradient(90deg, #6E110A 50%, #1A4C8B 50%);
-	padding-top: 35%;
-}
-
-h2 {
-	text-transform: capitalize;
-	font-family: "Big Caslon","Book Antiqua","Palatino Linotype",Georgia,serif;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-
-.nav {
-	padding-top: 35%;
+	padding: 16px 24px;
 }
 
 .layout {
@@ -58,9 +56,12 @@ h2 {
 	justify-content: space-between;
 }
 
+.container, .connect {
+	background-color: rgba(224, 224, 224, 0.5);	
+}
 .container {
-	background-color: rgba(224, 224, 224, 0.8);
 	width: 69%;
+	margin-right: 2%;
 	flex-wrap: wrap;
 }
 
@@ -68,14 +69,22 @@ h2 {
 	margin: 5%;
 }
 
+.title {
+
+}
+
 .connect {
-	background-color: rgba(224, 224, 224, 0.8);
 	width: 29%;
-	margin: 2%;
+	margin-left: 2%;
 }
 
 .connectInner {
 	margin: 5%;
+}
+
+.logo {
+	width: 30%;
+	height: 30%;
 }
 
 a:link {
@@ -97,12 +106,17 @@ a:active {
 	color: #002909;
 }
 
+ul.menu li{
+	float: left;
+	padding: 16px 18px;
+}
+
 footer {
 	width: 100%;
 	color: #999;
 	text-transform: capitalize;
 	text-align: center;
- 	background-color: #333;
+ 	background-color: rgba(0, 0, 0, 0.8);
  	padding-bottom: 3%;
  	padding-top: 1%;
  	border-top: 3px solid #999;
